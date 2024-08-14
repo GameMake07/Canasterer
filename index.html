@@ -15,6 +15,17 @@
         onclick="clearPage()">
         Ny match
     </button>
+    <script>
+        function clearPage() {
+            // Rensar hela kroppens innehåll
+            document.body.innerHTML = '';
+            // Skapar ett nytt textfält där användaren kan skriva
+            let newTextArea = document.createElement('textarea');
+            newTextArea.style.width = '100%';
+            newTextArea.style.height = '200px';
+            document.body.appendChild(newTextArea);
+        }
+    </script>
     
     
     
